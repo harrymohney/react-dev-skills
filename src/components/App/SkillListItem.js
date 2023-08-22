@@ -1,7 +1,13 @@
 import React from 'react';
+import './SkillListItem.css';
 
-function SkillListItem() {
-  return <li>SkillListItem</li>;
+function SkillListItem({ skill }) {
+  return (
+    <li className="SkillListItem">
+      {skill.name}
+      <span className="level">{skill.level}</span>
+    </li>
+  );
 }
 
 export default SkillListItem;

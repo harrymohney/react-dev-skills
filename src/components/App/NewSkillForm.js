@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewSkillForm.css';
 
 function NewSkillForm() {
   return (
