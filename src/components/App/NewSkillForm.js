@@ -1,7 +1,7 @@
-import React from 'react';
+
 import './NewSkillForm.css';
 
-function NewSkillForm() {
+export default function NewSkillForm() {
   return (
     <form>
       <label>Skill</label>
@@ -18,5 +18,3 @@ function NewSkillForm() {
     </form>
   );
 }
-
-export default NewSkillForm;

@@ -1,8 +1,6 @@
-import React from 'react';
 import SkillListItem from './SkillListItem';
-import './SkillList.css';
 
-function SkillList({ skills }) {
+export default function SkillList({ skills }) {
   return (
     <ul className="SkillList">
       {skills.map((skill, index) => (
@@ -11,6 +9,3 @@ function SkillList({ skills }) {
     </ul>
   );
 }
-
-
-export default SkillList;

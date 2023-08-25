@@ -1,7 +1,7 @@
-import React from 'react';
+
 import './SkillListItem.css';
 
-function SkillListItem({ skill }) {
+export default function SkillListItem({ skill }) {
   return (
     <li className="SkillListItem">
       {skill.name}
@@ -9,5 +9,3 @@ function SkillListItem({ skill }) {
     </li>
   );
 }
-
-export default SkillListItem;
