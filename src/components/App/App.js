@@ -4,8 +4,6 @@ import NewSkillForm from './NewSkillForm';
 
 import './App.css';
 
-
-
 export default function App() {
   const initialSkills = [
     { name: "HTML", level: 5 },
@@ -16,12 +14,16 @@ export default function App() {
 
   const [skills, setSkills] = useState(initialSkills);
 
+  const addSkill = (newSkill) => {
+    setSkills([...skills, newSkill]);
+  };
+
   return (
     <div className="App">
       <h1>React Dev Skills</h1>
       <SkillList skills={skills} />
       <hr />
-      <NewSkillForm />
+      <NewSkillForm addSkill={addSkill} />
     </div>
   );
 }
